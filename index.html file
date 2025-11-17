@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Princess Day 💗</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffe6f2;
+    font-family: "Comic Sans MS", cursive;
+    text-align: center;
+}
+
+.border {
+    border: 8px solid #ff99cc;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #ff99cc; }
+    to   { box-shadow: 0 0 25px hotpink; }
+}
+
+h1 {
+    font-size: 42px;
+    color: hotpink;
+    margin-top: 20px;
+    animation: pop 1.2s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0); opacity:0; }
+    100% { transform: scale(1); opacity:1; }
+}
+
+.subtext {
+    font-size: 26px;
+    margin-top: -10px;
+    color: #ff4da6;
+    font-weight: bold;
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.heart {
+    font-size: 65px;
+    animation: heartbeat 1s infinite alternate;
+}
+
+@keyframes heartbeat {
+    from { transform: scale(1); }
+    to   { transform: scale(1.3); }
+}
+
+.message {
+    font-size:22px; 
+    color:#d63384;
+    margin-top: 10px;
+    animation: fadeIn 3s ease;
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_9e5bb5a6b2.mp3" type="audio/mpeg">
+</audio>
+
+<div class="border">
+    <h1>💗 Happy Princess Day 💗</h1>
+    
+    <div class="subtext">
+        ✨ My Best Friend ✨
+    </div>
+    
+    <div class="heart">💖💖💖</div>
+
+    <p class="message">
+        You are the sweetest, cutest and most precious person!  
+        This surprise page is made specially for you 💗👑💗
+    </p>
+</div>
+
+</body>
+</html>
