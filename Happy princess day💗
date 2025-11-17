@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Princess Day Surprise 💗👑</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffb7d5, #ffd6ec, #fff0f7);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #ff2e84;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .heart {
+    font-size: 60px;
+    animation: beat 1s infinite ease-in-out;
+  }
+
+  @keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  .card {
+    background: #ffffffaa;
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 380px;
+    box-shadow: 0 8px 20px rgba(255, 100, 160, 0.3);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="heart">💗</div>
+  <h1>Happy Princess Day</h1>
+  <p>My Best Friend 💗</p>
+
+  <div class="card">
+    <p>You mean a lot to me… and I made this little surprise just for you 🎀</p>
+    <p>Enjoy the music while reading this 💞</p>
+  </div>
+</div>
+
+<!-- Auto-play music (mobile requires first tap) -->
+<audio id="bgmusic" autoplay loop>
+  <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Calming/Kevin_MacLeod_-_Daydream_Blue.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  // Mobile autoplay permission fix
+  document.addEventListener('click', () => {
+    const audio = document.getElementById('bgmusic');
+    audio.play();
+  }, { once: true });
+</script>
+
+</body>
+</html>
